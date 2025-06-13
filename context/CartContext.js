@@ -32,10 +32,10 @@ export const CartProvider = ({ children }) => {
       const exists = cart.find((item) => item.id === product.id);
       if (exists) {
         setCart(cart.map((item) =>
-          item.id === item.id ? { ...item, qty: item.qty + 1 } : item
+          item.id === product.id ? { ...item, qty: item.qty + 1 } : item
         ));
       } else {
-        setCart([...cart, { ...item, qty: 1 }]);
+        setCart([...cart, { ...product, qty: 1 }]);
       }
     } catch (err) {
       console.error("Add to cart error:", err.message);
