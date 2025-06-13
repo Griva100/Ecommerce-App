@@ -16,29 +16,19 @@ export const CartProvider = ({ children }) => {
   }, [cart]);
 
   const addToCart = async (product) => {
-    try {
-      await fetch("/api/cart", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(product),
-      });
+    await fetch("/api/cart", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(product),
+    });
 
-      if (!res.ok) {
-        throw new Error("Failed to sync with backend");
-      }
-
-      const { item } = await res.json();
-
-      const exists = cart.find((item) => item.id === product.id);
-      if (exists) {
-        setCart(cart.map((item) =>
-          item.id === product.id ? { ...item, qty: item.qty + 1 } : item
-        ));
-      } else {
-        setCart([...cart, { ...product, qty: 1 }]);
-      }
-    } catch (err) {
-      console.error("Add to cart error:", err.message);
+    const exists = cart.find((item) => item.id === product.id);
+    if (exists) {
+      setCart(cart.map((item) =>
+        item.id === product.id ? { ...item, qty: item.qty + 1 } : item
+      ));
+    } else {
+      setCart([...cart, { ...product, qty: 1 }]);
     }
   };
 
