@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Stylish Shoes",
+    "price": 2500,
+    "category": "Footwear",
+    "image": "/images/shoes.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Casual Shirt",
+    "price": 1500,
+    "category": "Clothing",
+    "image": "/images/shirt.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Smart Watch",
+    "price": 4500,
+    "category": "Accessories",
+    "image": "/images/watch.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Running Sneakers",
+    "price": 3200,
+    "category": "Footwear",
+    "image": "/images/sneakers.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Formal Trouser",
+    "price": 2000,
+    "category": "Clothing",
+    "image": "/images/trouser.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Leather Belt",
+    "price": 700,
+    "category": "Accessories",
+    "image": "/images/belt.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Sports Cap",
+    "price": 500,
+    "category": "Accessories",
+    "image": "/images/cap.jpg"
+  },
+  {
+    "id": 8,
+    "title": "High-Top Boots",
+    "price": 3800,
+    "category": "Footwear",
+    "image": "/images/boots.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Denim Jacket",
+    "price": 2600,
+    "category": "Clothing",
+    "image": "/images/jacket.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Analog Watch",
+    "price": 3200,
+    "category": "Accessories",
+    "image": "/images/analog-watch.jpg"
+  }
+]
